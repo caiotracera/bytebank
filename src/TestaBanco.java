@@ -3,11 +3,11 @@ public class TestaBanco {
         Conta contaDoCaio = new Conta();
 
         contaDoCaio.titular = new Cliente();
-        contaDoCaio.titular.nome = "Caio Tracera";
-        contaDoCaio.titular.cpf = "222.222.222-22";
-        contaDoCaio.titular.profissao = "Programador";
+        contaDoCaio.titular.setNome("Caio Tracera");
+        contaDoCaio.titular.setCpf("222.222.222-22");
+        contaDoCaio.titular.setProfissao("Programador");;
         contaDoCaio.deposita(100);
 
-        System.out.println(contaDoCaio.titular.nome);
+        System.out.println(contaDoCaio.titular.getNome());
     }
 }
