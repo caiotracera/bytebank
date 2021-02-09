@@ -4,6 +4,11 @@ public class Conta {
     private int agencia;
     private int numero;
 
+    public Conta(int agencia, int numero) {
+        this.agencia = agencia;
+        this.numero = numero;
+    }
+
     public double getSaldo() {
         return saldo;
     }
