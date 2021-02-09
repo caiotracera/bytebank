@@ -1,8 +1,8 @@
 public class Conta {
+    Cliente titular;
     private double saldo;
     private int agencia;
     private int numero;
-    Cliente titular;
 
     public double getSaldo() {
         return saldo;
