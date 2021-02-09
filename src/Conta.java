@@ -33,7 +33,7 @@ public class Conta {
     }
 
     public void deposita(double valor) {
-        this.saldo = this.saldo + valor;
+        this.saldo += valor;
     }
 
     public boolean saca(double valor) {
