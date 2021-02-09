@@ -1,5 +1,5 @@
 public class Conta {
-    private static int total;
+    private static int total = 0;
     Cliente titular;
     private double saldo;
     private int agencia;
