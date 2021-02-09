@@ -1,12 +1,18 @@
 public class Conta {
+    private static int total;
     Cliente titular;
     private double saldo;
     private int agencia;
     private int numero;
 
     public Conta(int agencia, int numero) {
+        total++;
         this.agencia = agencia;
         this.numero = numero;
+    }
+
+    public static int getTotal() {
+        return total;
     }
 
     public double getSaldo() {
@@ -18,7 +24,7 @@ public class Conta {
     }
 
     public void setAgencia(int agencia) {
-        if(agencia <= 0) {
+        if (agencia <= 0) {
             System.out.println("O número da agência não pode ser menor ou igual a zero.");
             return;
         }
@@ -31,7 +37,7 @@ public class Conta {
     }
 
     public void setNumero(int numero) {
-        if(numero <= 0) {
+        if (numero <= 0) {
             System.out.println("O número da conta não pode ser menor ou igual a zero.");
             return;
         }
