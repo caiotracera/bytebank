@@ -2,7 +2,7 @@ public class Conta {
     double saldo;
     int agencia;
     int numero;
-    String titular;
+    Cliente titular;
 
     public double getSaldo() {
         return saldo;
@@ -28,11 +28,11 @@ public class Conta {
         this.numero = numero;
     }
 
-    public String getTitular() {
+    public Cliente getTitular() {
         return titular;
     }
 
-    public void setTitular(String titular) {
+    public void setTitular(Cliente titular) {
         this.titular = titular;
     }
 
